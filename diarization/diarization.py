@@ -10,7 +10,7 @@ df = pd.read_csv('p1/p1.tsv', sep='\t')
 
 pipeline = Pipeline.from_pretrained(
     "pyannote/speaker-diarization", 
-    use_auth_token="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")
+    use_auth_token="YOUR-HF-TOKEN")
 
 import torch
 pipeline.to(torch.device("cuda"))
